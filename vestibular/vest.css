@@ -1,0 +1,33 @@
+body{
+    background-color: #E7ECFA;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  /* conteúdo */
+.container{
+    width: 70%;
+    text-align: justify;
+  }
+  
+  p{
+    color: rgb(39, 39, 39);
+    font-size: 18px;
+  }
+  
+  h1, h2, h3{
+    color: #334692
+  }
+  
+
+  a{
+    text-decoration: none;
+    color: rgb(39, 39, 39);
+  }
+
+  a:hover{
+    color: rgb(92, 91, 91);
+  }
+
+  #link2{
+    text-decoration: underline;
+  }

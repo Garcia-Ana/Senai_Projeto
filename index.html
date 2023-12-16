@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Login - Portal Vestibular</title>
+    
+    <link rel="stylesheet" href="login/login.css">
+    <script src="login/login.js"></script>
+    <script src="https://kit.fontawesome.com/a703ddd776.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="home/tt.png" type="image/x-icon">
+</head>
+<body>
+    <!-- "O Portal Vestibular: Navegue pelo caminho do conhecimento, desbrave o universo das oportunidades e conquiste o seu futuro com sabedoria." -->
+    <!-- "Portal Vestibular: Seu guia rápido para o sucesso acadêmico." -->
+
+    <div class="container">
+        <div class="content first-content">
+            <div class="first-column">
+                <h2 class="title title-primary">Bem vindo(a) de volta!</h2>
+                <p class="description description-primary">Realize o Login preenchendo os seus dados</p>
+                <p class="description description-primary">e tenha acesso exclusivo aos nossos conteúdos</p>
+                <button id="clique" class="btn btn-primary" onclick="openModal()">Clique!</button>
+            </div>    
+
+            <div id="modal-container" class="modal-container">
+                <div class="modal">
+                    <button class="fechar" id="fechar">X</button>
+                    <h1> Olá, visitante! </h1>
+                    <p> Seja bem-vindo(a) ao site Portal Vestibular! Gostaríamos de informar que o seu login é "Estudante". Simples, não é?</p><br>
+                    <p> Dicas para a sua senha:</p>
+                    <p> 1º - É um dos mais conhecidos vestibulares do país. </p>
+                    <p> 2º - Ele ocorre em dois domingos seguidos. </p><br>
+                    <p> Obs: Primeira letra do "usuário" e da "senha" são maiusculas. </p>
+                    <p> A sua senha é? </p>
+                </div>
+            </div>
+
+            <div id="modal-container-2" class="modal-container">
+                <div class="modal">
+                    <button class="fechar" id="fechar">X</button>
+                    <h1> Não sabe a senha? </h1>
+                    <p> O seu usuário para Login é "Estudante" e a senha é "Enem."</p><br>
+                    <p>Agora, tente novamente fazer o Login.</p>
+                </div>
+            </div>
+
+            
+        <div class="second-column">
+                <h2 class="title title-second">Login</h2>
+                <div class="social-media">
+                    <ul class="list-social-media">
+                        <a class="link-social-media" href="https://www.instagram.com/">
+                            <li class="item-social-media">
+                                <i class="fab fa-instagram"></i>
+                            </li>
+                        </a>
+
+                        <a class="link-social-media" href="https://www.facebook.com/?locale=pt_BR">
+                            <li class="item-social-media">
+                                <i class="fab fa-facebook"></i>        
+                            </li>
+                        </a>
+                        
+                        <a class="link-social-media" href="https://web.whatsapp.com/">
+                            <li class="item-social-media">
+                                <i class="fab fa-whatsapp"></i>
+                            </li>
+                        </a>
+                    </ul>
+                </div><!-- social media -->
+
+                <p class="description description-second">Preencha os campos abaixo:</p>
+                <form class="form">
+                    <label class="label-input" for="">
+                        <i class="far fa-user icon-modify" id="iconlogin"></i>
+                        <input type="text" name="" placeholder="Usuário" id="login" autofocus="true">
+                    </label>
+                    
+                    <label class="label-input" for="">
+                        <i class="fas fa-lock icon-modify" id="iconlogin"></i>
+                        <input type="password" name="" placeholder="Senha" id="senha">
+                    </label>
+                    
+                    <a class="password" onclick="openModal2()">Não sabe a senha?</a>
+
+                    <button type="submit" class="btn btn-second" onclick="logar(); return false">Entre</button>        
+                </form>
+            </div><!-- second column -->
+        </div><!-- first content -->
+        
+                </form>
+            </div><!-- second column -->
+        </div><!-- second-content -->
+    </div>
+    
+</body>
+</html>
